@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Tahoma, Geneva, sans-serif;
+      }
+      div {
+        display: inline;
+      }
+    </style>
+    <script>
+      function updateStats(memuse) {
+        //document.getElementById('rss').innerHTML = memuse;
+      }
+      var host = window.document.location.host.replace(/:.*/, '');
+      var ws = new WebSocket('ws://' + host + ':8000');
+      ws.onmessage = function (event) {
+        updateStats(JSON.stringify(event.data));
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="bundle.js" type="text/javascript"></script>
+  </body>
+</html>
