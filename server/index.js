@@ -6,7 +6,7 @@ var server = require('http').createServer();
 const listContainers = require('./helpers/docker/listContainers')
 
 app.use(express.static(path.join(__dirname, '../client/public')));
-
+// https://github.com/rgbkrk/multipipboy/blob/master/server/index.js
 // listContainers().then((containers) => {
 //     //ws.send(JSON.stringify(containers), function () { /* ignore errors */ });
 //     console.log(containers);
