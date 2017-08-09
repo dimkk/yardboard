@@ -7,6 +7,11 @@ const listContainers = require('./helpers/docker/listContainers')
 
 app.use(express.static(path.join(__dirname, '../client/public')));
 
+// listContainers().then((containers) => {
+//     //ws.send(JSON.stringify(containers), function () { /* ignore errors */ });
+//     console.log(containers);
+//   })
+
 var wss = new WebSocketServer({server: server});
 wss.on('connection', function (ws) {
   listContainers().then((containers) => {

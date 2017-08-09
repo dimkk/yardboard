@@ -14,7 +14,7 @@
         //document.getElementById('rss').innerHTML = memuse;
       }
       var host = window.document.location.host.replace(/:.*/, '');
-      var ws = new WebSocket('ws://' + host + ':8000');
+      var ws = new WebSocket('ws://' + host + ':3000');
       ws.onmessage = function (event) {
         updateStats(JSON.stringify(event.data));
       };
