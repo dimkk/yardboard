@@ -1,0 +1,46 @@
+{
+	"authors" :  [ 
+		{ 
+			"id" : "1", 
+			"name": "George", 
+			"surname" : "Martin",
+			"biography" : "The family first lived in a house on Broadway, belonging to Martin's great-grandmother. In 1953, they moved to a federal housing project near the Bayonne docks.[11] During Martin's childhood, his world consisted predominantly of \"First Street to Fifth Street\", between his grade school and his home; this limited world made him want to travel and experience other places, but the only way of doing so was through his imagination, so he became a voracious reader.[13] The young Martin began writing and selling monster stories for pennies to other neighborhood children, dramatic readings included."
+		}, 
+		{ 
+			"id": "2", 
+			"name": "Joanne ", 
+			"surname" : "Rowling",
+			"biography" : "Although she writes under the pen name J. K. Rowling (pronounced rolling),[11] her name, before her remarriage, was simply Joanne Rowling. Anticipating that the target audience of young boys might not want to read a book written by a woman, her publishers asked that she use two initials rather than her full name. As she had no middle name, she chose K (for Kathleen) as the second initial of her pen name, from her paternal grandmother.[12] She calls herself Jo.[13] Following her marriage, she has sometimes used the name Joanne Murray when conducting personal business." 
+			} 
+	],
+	"books" : [
+		{
+			"id" : "1",
+			"title" : "Game of thrones",
+			"authors" : ["1","2"],
+			"gerges" : ["1", "2", "3"],
+			"contents" : "Chapter 1\nChapter 2\n   Chapter 2.1\n      Chapter 2.1.1"
+		},
+		{
+			"id" : "2",
+			"title" : "Harry Potter",
+			"authors" : ["2"],
+			"gerges" : ["1","2"],
+			"contents" : "Chapter 1\nChapter 2\n   Chapter 2.1\n      Chapter 2.1.1"
+		}
+	],
+	"gerges" : [
+		{
+			"id" : "1",
+			"title" : "Adventure"
+		},
+		{
+			"id" : "2",
+			"title" : "Drama"
+		},
+		{
+			"id" : "3",
+			"title" : "Fantasy"
+		}
+	]
+}
